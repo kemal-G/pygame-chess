@@ -2,7 +2,7 @@
  A simple chess game written from scratch in python. Code seems shitty and long but gets the job done. It uses the `chessdb.cn`'s api for suggested engine moves. Made for analysis and study purposes.
 
 ## Prerequireties
-This project is only tested on python3. You can install the requireties with `python3 -m pip requirements.txt`.
+This project is only tested on python3. You can install the requireties with `python3 -m pip install -r requirements.txt`.
 
 ## How to play
 Simply type `python3 chess.py` to play.

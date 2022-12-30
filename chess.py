@@ -1,6 +1,7 @@
 #TODO
 # Yalnızca vezire terfi yapılabiliyor.
 # Oyun bitmiyor.
+#Pat olmuyor
 
 import pygame
 from pygame.locals import *
@@ -449,7 +450,7 @@ def hamle(kaynak, hedef):
                                 winner=1
 
 #pygame.init()
-window = pygame.display.set_mode((1500,1000),pygame.RESIZABLE)
+window = pygame.display.set_mode((1200,1000),pygame.RESIZABLE)
 button = pygame.image.load(r"./images/stockfish_button.png")
 button1 = pygame.transform. scale(button, (50,50))
 button2=pygame.image.load(r"./images/undo.png")
@@ -740,7 +741,7 @@ def loc():
     pygame.draw.rect(window,(47,79,79),((1097,505,55,20)))
     window.blit(button1, (1100,300))
     window.blit(button3, (1100,400))
-    window.blit(reset_text, (1100,500))
+    window.blit(reset_text, (1110,500))
     for i in range(0,len(taslar)):
         for j in range(0,len(taslar)):
             if taslar[i][j]!="--":
@@ -757,7 +758,7 @@ while True:
     warning_text = warning_font.render(warning, False, warning_color)
     window.blit(warning_text, (900,150))
     if stockfish_on:
-        window.blit(stock_text, (200,900))
+        window.blit(stock_text, (100,50))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()

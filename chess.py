@@ -741,7 +741,7 @@ def loc():
     pygame.draw.rect(window,(47,79,79),((1097,505,55,20)))
     window.blit(button1, (1100,300))
     window.blit(button3, (1100,400))
-    window.blit(reset_text, (1110,500))
+    window.blit(reset_text, (1100,500))
     for i in range(0,len(taslar)):
         for j in range(0,len(taslar)):
             if taslar[i][j]!="--":
